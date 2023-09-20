@@ -1,5 +1,7 @@
 linters-settings:
   gocritic:
+    disabled-checks:
+      - "paramTypeCombine"
     enabled-tags:
       - "performance"
       - "style"
@@ -49,7 +51,7 @@ linters:
     - ineffassign
     - interfacebloat
     - interfacer
-#    - ireturn # We disable this one since we're returning any's anyway.
+    #    - ireturn # We disable this one since we're returning any's anyway.
     - loggercheck
     - maintidx
     - makezero
